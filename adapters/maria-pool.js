@@ -73,6 +73,7 @@
     maria_pool.prototype.adapter = function(sql, args, callback) {
       var c;
       if (this.connection) {
+        console.log(sql);
         c = this.connection;
         return this.connection.acquire(function(err, client) {
           var db, result;

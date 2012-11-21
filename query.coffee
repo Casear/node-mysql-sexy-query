@@ -155,9 +155,7 @@ class Query
 
         fields = ( field.trim() for field in fields )
 
-        for v in fields
-            if v.indexOf('.') == -1
-                v = @_get_table_as() + '.' + v
+        for v in fields 
             if v not in @_select
                 @_select.push v
         @
