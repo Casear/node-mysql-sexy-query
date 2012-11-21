@@ -70,7 +70,7 @@ class Query
             'SELECT' , 'FROM' , 'JOIN' , 'LEFT' , 'RIGHT' , 'INNER' ,
             'COUNT' , 'MAX' , 'MIN' , 'AVG' , 'SUM' ,
             'WHERE' , 'ORDER' , 'ASC' , 'DESC' ,
-            'GROUP' , 'HAVING' , 'LIMIT' , 'OFFSET' , 'DATE' ,"YEAR" ,"MONTH"
+            'GROUP' , 'HAVING' , 'LIMIT' , 'OFFSET' , 'DATE' ,"YEAR" ,"MONTH","DATE_FORMAT"
         ]
 
     execute : (callback) ->

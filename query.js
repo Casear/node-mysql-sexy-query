@@ -72,7 +72,7 @@
       this._attr = {};
       this._page = null;
       this._page_size = null;
-      this._key = ["!", "=", "<", ">", '(', ')', '?', '*', ',', 'IN', 'ON', 'NOT', 'AS', 'AND', 'OR', 'NULL', 'IS', 'SELECT', 'FROM', 'JOIN', 'LEFT', 'RIGHT', 'INNER', 'COUNT', 'MAX', 'MIN', 'AVG', 'SUM', 'WHERE', 'ORDER', 'ASC', 'DESC', 'GROUP', 'HAVING', 'LIMIT', 'OFFSET', 'DATE', "YEAR", "MONTH"];
+      this._key = ["!", "=", "<", ">", '(', ')', '?', '*', ',', 'IN', 'ON', 'NOT', 'AS', 'AND', 'OR', 'NULL', 'IS', 'SELECT', 'FROM', 'JOIN', 'LEFT', 'RIGHT', 'INNER', 'COUNT', 'MAX', 'MIN', 'AVG', 'SUM', 'WHERE', 'ORDER', 'ASC', 'DESC', 'GROUP', 'HAVING', 'LIMIT', 'OFFSET', 'DATE', "YEAR", "MONTH", "DATE_FORMAT"];
     }
 
     Query.prototype.execute = function(callback) {
