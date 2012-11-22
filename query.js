@@ -243,12 +243,12 @@
     };
 
     Query.prototype.group = function(condition) {
-      this._group = " GROUP BY " + (this.encode_sql(condition));
+      this._group = " GROUP BY " + condition;
       return this;
     };
 
     Query.prototype.order = function(condition) {
-      return this._order = " ORDER BY " + (this.encode_sql(condition));
+      return this._order = " ORDER BY " + condition;
     };
 
     Query.prototype.limit = function(limit, offset) {

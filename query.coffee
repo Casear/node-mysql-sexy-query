@@ -209,11 +209,11 @@ class Query
         @
 
     group : (condition) ->
-        @_group = " GROUP BY #{@encode_sql condition}"
+        @_group = " GROUP BY #{condition}"
         @
 
     order : (condition) ->
-        @_order = " ORDER BY #{@encode_sql condition}"
+        @_order = " ORDER BY #{condition}"
 
     limit : (limit , offset = 0) ->
         @_limit  = Number(limit)
