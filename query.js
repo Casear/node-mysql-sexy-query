@@ -426,7 +426,7 @@
         _results = [];
         for (_i = 0, _len = _ref.length; _i < _len; _i++) {
           v = _ref[_i];
-          _results.push(this.encode_sql(v));
+          _results.push(v);
         }
         return _results;
       }).call(this);

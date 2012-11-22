@@ -334,7 +334,7 @@ class Query
     _select_to_sql : ->
         if @_select.length == 0
             return '*'
-        fields = ( @encode_sql v for v in @_select )
+        fields = (  v for v in @_select )
         " #{fields.join ','} "
 
     _join_to_sql : ->
